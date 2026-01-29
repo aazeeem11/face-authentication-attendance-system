@@ -541,7 +541,7 @@ def main():
     st.sidebar.subheader("ℹ️ About")
     st.sidebar.info(
         "**Face Authentication Attendance System**\n\n"
-        "A production-ready attendance system using face recognition.\n\n"
+        " Smart Attendance system using face recognition.\n\n"
         "🔐 **Features:**\n"
         "- Face registration\n"
         "- Real-time recognition\n"

@@ -1,6 +1,6 @@
 # 👤 Face Authentication Attendance System
 
-**A production-ready, end-to-end face recognition attendance system built with Python, OpenCV, and deep learning.**
+**A face recognition attendance system built with Python, OpenCV, and deep learning.**
 
 > This project demonstrates senior-level ML engineering practices, from architecture design to production deployment considerations.
 
@@ -405,6 +405,40 @@ streamlit run app.py
    - **📅 Today**: Today's attendance summary
    - **📈 Monthly**: Monthly attendance details
    - **👤 User Summary**: Individual user statistics
+
+---
+
+## 🚀 Deployment on Streamlit Community Cloud
+
+Deploy your application for free on Streamlit's Community Cloud service.
+
+### Prerequisites
+
+- Your app is in a public or private GitHub repository.
+- You have a `requirements.txt` file.
+- The main script is named `app.py` or similar.
+
+### Deployment Steps
+
+1.  **Sign up for Streamlit Community Cloud**:
+    *   Go to [share.streamlit.io](https://share.streamlit.io) and sign up using your GitHub account.
+
+2.  **Click "New app"**:
+    *   From your workspace, click the "New app" button.
+
+3.  **Configure the app**:
+    *   **Repository**: Select the GitHub repository you just created (`face-authentication-attendance-system`).
+    *   **Branch**: Select the `main` branch.
+    *   **Main file path**: Enter `app.py`.
+    *   **App URL**: Customize the URL for your app (e.g., `your-name-face-attendance`).
+
+4.  **Deploy!**:
+    *   Click the "Deploy!" button. Streamlit will install the dependencies from your `requirements.txt` file and run your app.
+    *   The initial deployment might take a few minutes as it compiles `dlib` and other packages.
+
+5.  **Using the Deployed App**:
+    *   The deployed app will not have access to your local webcam for security reasons. The `st.camera_input` widget will be used instead, which allows users to take a picture with their device's camera.
+    *   The application's in-memory data (like registered faces if not persisted) will be reset every time the app reboots or updates. This implementation uses a SQLite database and pickle files, which will be created on the Streamlit instance's temporary file system.
 
 ---
 
@@ -972,4 +1006,4 @@ For questions or improvements:
 
 **Created with ❤️ for ML Engineers and Interview Candidates**
 
-_Last Updated: January 29, 2024_
+_Last Updated: January 29, 2026_
